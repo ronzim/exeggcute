@@ -1,11 +1,13 @@
 # exeggcute
 
-Just a launcher for scripts that work on files. 
-To set maximum file dimension, change `maxFileSize` in `Home.vue`.
-To add specific behaviour on file upload, fill the `doSomething` function in `Home.vue`.
-At the moment, a file check extension is enabled (only .txt): to bypass it, comment out lines 63-66 in `DropZone.vue`.
+Just a launcher for scripts that work on files.  
 
-## Project setup
+## Dev notes: 
+To set maximum file dimension, change `maxFileSize` in `Home.vue`.  
+To add specific behaviour on file upload, fill the `doSomething` function in `Home.vue`.  
+At the moment, a file check extension is enabled (only .txt): to bypass it, comment out lines 63-66 in `DropZone.vue`.  
+
+## Project setup:
 ```
 yarn install
 ```
