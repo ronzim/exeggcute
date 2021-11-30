@@ -1,18 +1,21 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <v-card class="text-center pa-4">
+    <DropZone :onFileLoad="doSomething" :maxFileSize="5000000" />
+  </v-card>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import DropZone from "@/components/DropZone.vue";
 
 export default {
   name: "Home",
   components: {
-    HelloWorld,
+    DropZone
   },
+  methods: {
+    doSomething: file => {
+      console.log("do something with this file", file);
+    }
+  }
 };
 </script>

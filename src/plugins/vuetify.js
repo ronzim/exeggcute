@@ -1,23 +1,21 @@
-// import { library } from "@fortawesome/fontawesome-svg-core";
-// import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-// import { fas } from "@fortawesome/free-solid-svg-icons";
-// import { far } from "@fortawesome/free-regular-svg-icons";
-import "@mdi/font/css/materialdesignicons.css";
 import Vue from "vue";
-import Vuetify from "vuetify/lib/framework";
-
-// library.add(fas, far);
-// Vue.component("font-awesome-icon", FontAwesomeIcon);
+import Vuetify from "vuetify";
+import "vuetify/dist/vuetify.min.css";
+import "@mdi/font/css/materialdesignicons.css";
 
 Vue.use(Vuetify);
 
 export default new Vuetify({
   theme: {
-    dark: false,
+    options: { customProperties: true },
+    dark: true,
     themes: {
-      options: { customProperties: true },
-      light: {
-        primary: "#007ec3"
+      dark: {
+        primary: "#219ebc",
+        secondary: "#8ecae6",
+        background: "#023047",
+        error: "#fb8500",
+        accent: "#ffb703"
       }
     }
   }
